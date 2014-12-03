@@ -1,5 +1,5 @@
 {
-  "name": "spa-workshop",
+  "name": "spa-app",
   "version": "1.0.0",
   "description": "Aerobatic SPA workshop",
   "scripts": {
@@ -40,6 +40,6 @@
     "angular-aerobatic": "^1.0.0"
   },
   "_aerobatic": {
-    "appId": "Z16yiwRmP"
+    "appId": "-kH_WsJuD"
   }
 }
