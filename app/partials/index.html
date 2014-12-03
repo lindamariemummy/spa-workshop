@@ -1,6 +1,12 @@
 <div>
-  <h2>Select Cities</h2>
-  <ul ng-repeat="city in this.cities">
-    <li><a ng-href="/cities/{{city}}">{{city}}</a>
+
+  <header>
+    <h2>Cities</h2>
+  </header>
+  <main>
+  <ul >
+    <li ng-repeat="city in this.cities"><a ng-href="/cities/{{city}}">{{city}}</a>
+  </main>
+
   </ul>
 </div>
