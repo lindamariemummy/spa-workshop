@@ -9,6 +9,13 @@ angular.module('directives', []);
     // Use html5 pushState for route navigation
     $locationProvider.html5Mode(true);
 
+    // $sceDelegateProvider.resourceUrlWhitelist([
+    //   // Allow same origin resource loads.
+    //   'self',
+    //   // Allow loading from our assets domain.  Notice the difference between * and **.
+    //   'http://localhost:3000/partials/**'
+    // ]);
+
     // In release mode templates should be compiled to JavaScript and added to the $templateCache. In
     // this case we refer to the templates simply by their relative path, i.e. 'partials/index.html'.
     // But in debug mode it's simpler to load the templates on demand via absolute URL. This avoids

@@ -1,7 +1,38 @@
 <h1>{{this.cityName}}</h1>
 
 <h3>Forecast</h3>
-<div>{{this.forecast | json}}</div>
+<div>
+
+	<h4>Local Day and Time: {{this.date}}
+	</h4>
+	<h4>Current Temperature: {{this.forecast.currently.temperature}}
+	</h4>
+	<h4>Current Weather: {{this.forecast.currently.summary}}
+	</h4>
+	<h4>Wind Speed: {{this.forecast.currently.windSpeed}} mph
+	</h4>
+	<h4>Later Today: {{this.forecast.hourly.summary}}
+	</h4>
+	<h4>Later This Week: {{this.forecast.daily.summary}}
+	</h4>
+
+</div>
 
 <h3>News</h3>
-<div>{{this.news | json}}</div>
+	<h4>Local News: <a href="{{this.news[0].href.substring((this.news[0].href).search('url=http')+4, (this.news[0].href).length)}}"> {{this.news[0].title}}</a> </h4>
+	<h4>Local News: <a href="{{this.news[1].href.substring((this.news[1].href).search('url=http')+4, (this.news[1].href).length)}}"> {{this.news[1].title}}</a> </h4><h4>Local News: <a href="{{this.news[2].href.substring((this.news[2].href).search('url=http')+4, (this.news[3].href).length)}}"> {{this.news[2].title}}</a> </h4>
+
+<!--	<iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDX6K2U5Wrpv5lCnE7ipnTvwzLn3Sb-hSI&center=-33.8569,151.2152&zoom=18
+  &maptype=satellite">
+</iframe> -->
+
+<!--<iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  src="{{this.map}}">
+</iframe> -->
