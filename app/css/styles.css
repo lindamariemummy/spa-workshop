@@ -6,11 +6,7 @@ body {
   background-size: cover;
   color: white;
   font-family: "Quicksand";
-
 }
-
-
-
 
 li {
   display: inline;
@@ -23,12 +19,12 @@ main {
   margin:auto;
 }
 
-a {
+.homepage {
   text-decoration: none;
   display: inline-block;
   background-color: rgba(100, 20, 16, 0.3);
   color:white;
-  font-size: 1.5em;
+  font-size: 1.25em;
   width: 5em;
   text-align: center;
   padding: 2.5em .5em;
@@ -38,10 +34,16 @@ a {
   margin: .5em 0;
 }
 
+a {
+  color:white;
+}
+
 .news {
   text-decoration: none;
   display: inline-block;
   width: 10em;
+  background-color: rgba(100, 20, 16, 0.3);
+  padding:2em;
 }
 
 h2 {
@@ -50,6 +52,7 @@ h2 {
   font-size: 6em;
   text-transform: lowercase;
   text-shadow: .04em .02em black;
+  font-weight: lighter;
 
 }
 
@@ -60,6 +63,13 @@ a:active {
 a:hover {
   background-color: rgba(255,255,255,0.1);
 }
+
+h1 {
+
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
 
 /* Fonts */
 

@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         src: ['bower_components/normalize-css/normalize.css', 'app/css/styles.css'],
-        dest: 'dist/app.min.css'
+        dest: 'dist/css/app.min.css'
       }
     },
     // Inject the angular dependency injection
@@ -30,8 +30,8 @@ module.exports = function(grunt) {
     },
     html2js: {
       // Compile partial views into an angular module called 'templates' (name is important).
-      // In debug mode template files are loaded directly via XHR. In release builds the 
-      // tmp/templates.js file should be included in the app.min.js script. Templates will be 
+      // In debug mode template files are loaded directly via XHR. In release builds the
+      // tmp/templates.js file should be included in the app.min.js script. Templates will be
       // preloaded in the $templateCache avoiding additional network round trips.
       options: {
         base: 'app',
@@ -48,14 +48,16 @@ module.exports = function(grunt) {
         files: [
           {src: 'app/index.html', dest: 'dist/index.html'},
           {src: 'app/favicon.ico', dest: 'dist/favicon.ico'},
-          {expand: true, cwd:'app', src: ['images/**'], dest: 'dist/'}
+          {expand: true, cwd:'app', src: ['images/**'], dest: 'dist/'},
+          {expand: true, cwd:'app', src: ['fonts/**'], dest: 'dist/'}
         ]
       }
     },
     concat: {
       vendor: {
         // Include any other vendor components
-        src: ['node_modules/angular-aerobatic/angular-aerobatic.min.js'],
+        src: ['node_modules/angular-aerobatic/angular-aerobatic.min.js',
+        'node_modules/moment/moment.js'],
         dest: 'dist/vendor.min.js',
       }
     },
