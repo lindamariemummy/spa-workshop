@@ -36,7 +36,12 @@ a {
   border-width: .1em;
   border-radius: 3.5em;
   margin: .5em 0;
+}
 
+.news {
+  text-decoration: none;
+  display: inline-block;
+  width: 10em;
 }
 
 h2 {
